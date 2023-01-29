@@ -38,4 +38,12 @@ from([1,2,3,4]).pipe(
 // A Subject is like an Observable, but can multicast to many Observers.
 //Subjects are like EventEmitters: they maintain a registry of many listeners.
 
-//
+const subject = new Subject();
+subject.subscribe((x)=>console.log(x,'11'));
+subject.next(10);
+subject.next(12);
+
+const subject = new behavourSubject();
+subject.subscribe((x)=>console.log(x,'11'));
+subject.next(10);
+subject.next(12);
